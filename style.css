@@ -317,6 +317,9 @@
         background-image: none;
         color: black;
     }
+    .photo>:nth-child(1){
+        width: 10rem;
+    }
     .body{
          /* top: -18rem; */
          grid-template-columns: 100%;
