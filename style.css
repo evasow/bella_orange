@@ -8,13 +8,11 @@
 
 .container {
     /* overflow: hidden; */
-    /* border: var(--bordure);  */
-    min-height: 350vh; 
+    border: var(--bordure); 
+    /* min-height: 350vh;  */
     margin: 1rem auto;
     display: grid;
     width: 100%;
-
-    /* grid-template-columns: 112rem; */
     grid-template-rows: 63rem 140rem 10rem;
     grid-gap: 2rem; 
 }
@@ -26,6 +24,7 @@
 .header{
     /* border: var(--bordure); */
     display: grid;
+    /* grid-template-columns: 100%; */
     grid-template-rows: 10rem 50rem 10rem;
     grid-gap: 2rem; 
 }
@@ -42,7 +41,7 @@
 .logo{
     /* border: var(--bordure); */
     /* margin: 1rem; */
-    background-image: url('Logo.png');
+    background-image: url('images/Logo.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -73,7 +72,7 @@
 }
 .photo{
     /* border: 1px red solid; */
-    background: linear-gradient(rgba(13, 9, 0.9, 0.5), rgba(0, 0, 0, 0.5)), url('Rectangle 48BG Slide (1).png');
+    background: linear-gradient(rgba(13, 9, 0.9, 0.5), rgba(0, 0, 0, 0.5)), url('images/Rectangle 48BG Slide (1).png');
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
@@ -130,7 +129,7 @@
     justify-content: space-around;
     grid-gap: 1rem;
 }
-.btn1{
+.btn1, .btn2{
     border: 1px red solid;
     margin: 1rem;
     background-color: var(--bagcolor-principale);
@@ -138,23 +137,18 @@
     border-radius: 2rem;
     text-align: center;
     line-height: 3rem;
-    font-size:2rem ;
+    font-size:2rem;
     width: 15rem;
 }
 .btn2{
     border: 1px solid white;
-    margin: 1rem;
     color: var(--color-principale);
-    border-radius: 2rem;
-    text-align: center;
-    line-height: 3rem;
-    font-size:2rem ;
-    width: 15rem;
+    background-color: transparent;
 }
 .telephones{
     /* border: 1px red solid; */
     margin: 5rem;
-    background-image: url('2telephones.png');
+    background-image: url('images/2telephones.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -195,7 +189,7 @@
 }
 .bloc3>:nth-child(1){
     /* border: 0.1rem solid black; */
-    background-image: url('RectangleImg2.png');
+    background-image: url('images/RectangleImg2.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -254,7 +248,7 @@
 }
 .bloc3>:nth-child(4){
     /* border: 0.1rem solid black; */
-    background-image: url('RectangleImg3.png');
+    background-image: url('images/RectangleImg3.png');
     background-position: center;
     background-size: cover;
   
@@ -269,7 +263,7 @@
 }
 .logo_footer{
     /* border: var(--bordure); */
-    background-image: url('Logo.png');
+    background-image: url('images/Logo.png');
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -287,13 +281,13 @@
     background-repeat: no-repeat;
 }
 .reseaux>:nth-child(1){
-    background-image: url('Vector (1).png');
+    background-image: url('images/Vector (1).png');
 }
 .reseaux>:nth-child(2){
-    background-image: url('Vector.png');
+    background-image: url('images/Vector.png');
 }
 .reseaux>:nth-child(3){
-    background-image: url('instagramicone.png');
+    background-image: url('images/instagramicone.png');
 }
 
 .copyright{
@@ -321,16 +315,14 @@
         width: 10rem;
     }
     .body{
-         /* top: -18rem; */
+         top: -18rem;
          grid-template-columns: 100%;
-         /* grid-template-rows: 100%; */
+         grid-template-rows: 100%;
          grid-template-rows: 60rem 20rem 170rem;
+         /* overflow-x: hidden; */
     }
     .header{
         grid-template-columns: 100%;
-    }
-    .telephones{
-        top: 0.5rem;
     }
    
     .boutons{
@@ -376,6 +368,24 @@
    .icone_menu{
     display: none;
    }
+}
+@media screen and (max-width : 1350px) {
+    .container{
+        /* overflow-x: hidden; */
+        /* grid-template-columns: 100%; */
+        /* justify-content: center; */
+    }
+    .body{
+        grid-template-columns: 100%;
+    }
+    .header{
+        grid-template-columns: 100%;
+    }
+}
+@media screen and (max-width: 1140px) {
+    .photo{
+        justify-content: center;
+    }
 }
 
 
